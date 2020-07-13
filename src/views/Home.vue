@@ -1,18 +1,43 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <el-container class="home-Con">
+      <SearchBar />
+      <HomeBanner />
+      <el-footer>
+        <HomeSwiper />
+      </el-footer>
+    </el-container>
+    <RecommendList :type="0" />
+    <RecommendList :type="1" />
+    <RecommendList :type="2" />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import SearchBar from "../components/Searchbar/Searchbar.vue";
+import HomeBanner from "../components/HomeBanner/HomeBanner.vue";
+import HomeSwiper from "../components/HomeSwiper/HomeSwiper.vue";
+import RecommendList from "../components/RecommendList/RecommendList.vue";
 export default {
-  name: 'Home',
+  data() {
+    return {};
+  },
   components: {
-    HelloWorld
+    SearchBar,
+    HomeBanner,
+    HomeSwiper,
+    RecommendList,
+  },
+};
+</script>
+<style lang="scss">
+.home {
+  padding-bottom: 60px;
+  .home-Con {
+    padding-top: 80px;
+  }
+  .el-row {
+    margin-bottom: 20px;
   }
 }
-</script>
+</style>

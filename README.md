@@ -1,24 +1,24 @@
-# vmusic
+# Vue版仿网易云音乐
 
-## Project setup
-```
-yarn install
-```
+相比烂大街的电商练习程序，我认为如果一个项目自己做了之后都不想或者没机会用就没什么意思了，前思后想还是选了做一个web版的网易云比较合适。
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## 功能列表
 
-### Compiles and minifies for production
-```
-yarn build
-```
+- [x] 后台部署
 
-### Lints and fixes files
-```
-yarn lint
-```
+- [x] 首页布局
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- [x] 播放器布局和基础功能
+
+- [x] 无保障手机登录(不建议使用)
+
+- [ ] 搜索--搜索结果列表+搜索提示(on going)
+
+- [ ] 播放列表(基于Vuex)
+
+- [ ] 歌单列表页面
+
+- [ ] ...
+
+  
+
