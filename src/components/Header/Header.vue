@@ -1,13 +1,14 @@
 <template>
   <div>
-    <el-row class="player-HeaderCon">
-      <el-col :span="2" class="player-Back"
+    <el-row class="header-Con">
+      <el-col :span="2" class="header-Back"
         ><i class="iconfont" @click="goBack">&#xe605;</i></el-col
       >
-      <el-col :span="20" class="player-SongName"><span>Humanoid</span></el-col>
-      <el-col :span="2" class="player-Share"
-        ><i class="iconfont">&#xe61e;</i></el-col
-      >
+      <el-col :span="20" class="header-TagName"><span>歌单</span></el-col>
+      <el-col :span="2" class="iconCon playerBtn">
+        <router-link to="/player">
+          <i class="el-icon-video-play"></i></router-link
+      ></el-col>
     </el-row>
   </div>
 </template>
@@ -28,7 +29,12 @@ export default {
 </script>
 
 <style lang="scss">
-.player-HeaderCon {
-  color: #fff;
+.header-Con {
+  text-align: center;
+  font-size: 25px;
+  .iconfont {
+    font-size: 25px;
+    cursor: pointer;
+  }
 }
 </style>

@@ -33,12 +33,22 @@ export const getRecommend = () => {
   return axios.get("/recommend/resource");
 };
 
+// 获取歌单详情
+export const getSongListDetail = (id) => {
+  return axios.get("/playlist/detail", {
+    params: {
+      id,
+    },
+  });
+};
+
 // 搜索结果
-export const getSearch = (type, keyword) => {
+export const getSearch = (type, keywords) => {
   return axios.get("/search", {
     params: {
       type,
-      keyword,
+      keywords,
+      limit: 10,
     },
   });
 };

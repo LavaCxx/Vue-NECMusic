@@ -22,7 +22,6 @@ export default {
     login() {
       let that = this;
       getLogin(that.phone, that.password).then((res) => {
-        console.log(res);
         if (res.data.code === 200) {
           Message.success({
             message: "登录成功！",

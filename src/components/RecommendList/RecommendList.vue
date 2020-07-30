@@ -23,7 +23,7 @@
               :key="item.id"
               class="songList-Con"
             >
-              <figure>
+              <figure @click="goSongList(item.id)">
                 <div class="songList-Img">
                   <img :src="item.picUrl || item.coverImgUrl" alt="" />
                   <p class="playCount-mask">
@@ -96,6 +96,10 @@ export default {
       } else {
         return num;
       }
+    },
+    goSongList(id) {
+      console.log(id);
+      this.$router.push("songListDetail/" + id);
     },
   },
 };

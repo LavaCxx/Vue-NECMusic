@@ -18,6 +18,8 @@ import {
   Slider,
   Card,
   Tabs,
+  TabPane,
+  Image,
 } from "element-ui";
 // 基础组件
 Vue.use(Col)
@@ -31,9 +33,9 @@ Vue.use(Col)
 Vue.use(Input).use(Carousel).use(CarouselItem).use(Slider);
 // 通知组件
 // 导航组件
-Vue.use(PageHeader).use(Tabs);
+Vue.use(PageHeader).use(Tabs).use(TabPane);
 // 其它组件
-Vue.use(Card);
+Vue.use(Card).use(Image);
 // Swiper
 Vue.use(VueAwesomeSwiper);
 

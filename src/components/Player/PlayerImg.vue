@@ -3,7 +3,7 @@
     <el-row class="playerImg-Con">
       <el-col>
         <img
-          src="https://i.loli.net/2020/06/30/c73PmXlKiJq9EyS.jpg"
+          src="http://p2.music.126.net/bw7Sxt-W5lq0Jeq9B9eaXA==/109951163846794308.jpg"
           alt=""
           class="song-Img"
           ref="songImg"
@@ -40,13 +40,14 @@ export default {
 <style lang="scss">
 .playerImg-Con {
   .song-Img {
-    width: 70vmin;
-    height: 70vmin;
+    width: 65vmin;
+    height: 65vmin;
     border-radius: 50%;
-    background: linear-gradient(red, green);
+    background: gray;
     animation: imgRotate 8s linear infinite forwards;
     transform-origin: center center;
     animation-play-state: paused;
+    border: 8px solid rgba(110, 110, 110, 0.8);
   }
   @keyframes imgRotate {
     from {

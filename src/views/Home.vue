@@ -9,7 +9,7 @@
     </el-container>
     <RecommendList :type="0" />
     <RecommendList :type="1" />
-    <RecommendList :type="2" />
+    <RecommendList :type="2" v-if="userId" />
   </div>
 </template>
 
@@ -20,7 +20,12 @@ import HomeSwiper from "../components/HomeSwiper/HomeSwiper.vue";
 import RecommendList from "../components/RecommendList/RecommendList.vue";
 export default {
   data() {
-    return {};
+    return {
+      userId: "",
+    };
+  },
+  created() {
+    this.userId = this.$store.state.userId;
   },
   components: {
     SearchBar,

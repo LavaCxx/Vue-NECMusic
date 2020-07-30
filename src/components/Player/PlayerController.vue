@@ -173,8 +173,9 @@ export default {
 <style lang="scss">
 .controller-First {
   width: 100%;
-  padding: 10px 0;
+  padding: 5px 0;
   line-height: 22px;
+  color: #fff;
   .playTime {
     font-size: 14px;
     text-align: center;
@@ -188,13 +189,15 @@ export default {
           width: 10px;
           height: 10px;
           border: none;
-          background-color: gray;
+          background-color: #fff;
         }
       }
     }
   }
 }
 .controller-Second {
+  color: #fff;
+
   padding: 10px 0;
   line-height: 50px;
   .play-Mode,
